@@ -4,7 +4,7 @@ import "./Slider.scss"
 
 const Slider = () => {
     return (
-        <Carousel className="carousel" controls={false} interval={null}>
+        <Carousel className="header__carousel" controls={false} interval={null}>
         </Carousel>
     );
 }

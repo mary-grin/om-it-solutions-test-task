@@ -1,0 +1,60 @@
+@import "src/colors.scss";
+
+.theme-toggle {
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  height: 30px;
+  align-self: center;
+  margin-top: 20px;
+
+  &__checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    &:checked + .theme-toggle__slider {
+      background-color: $black;
+      justify-content: end;
+      color: $white;
+    }
+    &:checked + .theme-toggle__slider::before {
+      transform: translateX(-90px);
+      content: url("/icons/nightmode.svg");
+      border: .6px solid $black;
+    }
+  }
+  &__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $gray-light;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+
+    &::before {
+      position: absolute;
+      content: url("/icons/daymode.svg");
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 40px;
+      width: 40px;
+      right: 0;
+      bottom: -5px;
+      background-color: #fff;
+      transition: 0.3s;
+      border-radius: 100%;
+      border: .6px solid $gray-light;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
