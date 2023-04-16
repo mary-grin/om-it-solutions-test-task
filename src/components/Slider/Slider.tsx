@@ -4,7 +4,7 @@ import "./Slider.scss"
 
 const Slider = () => {
     return (
-        <Carousel className="carousel header__carousel" controls={false} interval={null}>
+        <Carousel className="carousel header__carousel-desktop" controls={false} interval={3000}>
             <CarouselItem>
                 <div className="carousel__item">
                     <div className="carousel__slide">
@@ -36,7 +36,7 @@ const Slider = () => {
                         <p className="carousel__text">eLearning Packages</p>
                     </div>
                     <div className="carousel__slide">
-                        <div className="carousel__image"></div>
+                        <img src="public/slider/3.2_slide.png" alt="Contact us" className="carousel__image"></img>
                         <div className="carousel__block">
                             <img src="public/icons/contact-us.svg" alt="Letter Icon" className="carousel__icon"/>
                             <p className="carousel__block-text">Contact us</p>

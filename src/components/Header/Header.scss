@@ -1,12 +1,15 @@
 @import "src/colors.scss";
 
 .header {
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 145px 0;
+  &__container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 145px 0;
+  }
 
   &__content {
     display: flex;
+    gap: 25px;
   }
 
   .theme-block {
@@ -17,23 +20,34 @@
     flex-direction: column;
     justify-content: center;
     padding: 0 40px;
+
     &__text {
       font-weight: 500;
       width: 75%;
       text-align: center;
       margin: 0 auto;
     }
+
     &__line {
       border: 1px solid $yellow-light;
       opacity: 1;
     }
   }
+
+  &__line {
+    width: 100%;
+    height: 10px;
+    background-color: $primary_green;
+  }
 }
 
 #light {
   .header {
-    background-image: linear-gradient($black_light, $black_light), url("/img/header_background.png");
+    &__container {
+      background-image: linear-gradient($black_light, $black_light), url("/img/header_background.png");
+    }
   }
+
   .theme-block {
     background-color: $white;
     &__text {
@@ -44,8 +58,11 @@
 
 #dark {
   .header {
-    background-image: linear-gradient($black_dark, $black_dark), url("/img/header_background.png");
+    &__container {
+      background-image: linear-gradient($black_dark, $black_dark), url("/img/header_background.png");
+    }
   }
+
   .theme-block {
     background-color: $background-dark;
     &__text {
@@ -53,4 +70,19 @@
     }
   }
 }
+@media (max-width: 674px) {
+  .header__content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
+  .header__container {
+    padding: 50px 0;
+
+    .theme-block {
+      max-width: 400px;
+      width: 100%;
+      height: 300px;
+    }
+  }
+}
