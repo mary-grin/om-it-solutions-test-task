@@ -5,6 +5,10 @@
   background-size: cover;
   padding: 145px 0;
 
+  &__content {
+    display: flex;
+  }
+
   .theme-block {
     border-radius: 20px;
     width: 260px;
