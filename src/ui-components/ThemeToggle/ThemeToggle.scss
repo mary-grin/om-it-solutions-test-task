@@ -21,7 +21,7 @@
     &:checked + .theme-toggle__slider::before {
       transform: translateX(-90px);
       content: url("/icons/nightmode.svg");
-      border: .6px solid $black;
+      border: 0.6px solid $black;
     }
   }
   &__slider {
@@ -50,7 +50,7 @@
       background-color: #fff;
       transition: 0.3s;
       border-radius: 100%;
-      border: .6px solid $gray-light;
+      border: 0.6px solid $gray-light;
     }
   }
 

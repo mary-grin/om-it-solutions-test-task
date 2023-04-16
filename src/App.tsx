@@ -1,27 +1,24 @@
-import './App.scss'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from "@/components/Header/Header";
-import { useState, createContext } from "react"
+import { useContext } from "react";
 
-export const ThemeContext = createContext<{ theme: string, changeTheme: () => void }>({
-    theme: "light",
-    changeTheme: () => {}
-})
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import Header from "@/components/Header/Header";
+import Navbar from "@/components/Navbar/Navbar";
+import { Context } from "@/context/ThemeContext";
+
+import "./App.scss";
 
 function App() {
-    const [theme, setTheme] = useState<string>("light")
+  const { theme } = useContext(Context);
 
-    const changeTheme = () => {
-        setTheme(state => state === "light" ? "dark" : "light")
-    }
-
-    return (
-        <ThemeContext.Provider value={{theme, changeTheme}}>
-            <div className="page" id={theme}>
-                <Header/>
-            </div>
-        </ThemeContext.Provider>
-    )
+  return (
+    <div className="page" id={theme}>
+      <Header />
+      <main>
+        <Navbar />
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;

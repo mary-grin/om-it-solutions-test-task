@@ -1,0 +1,39 @@
+@import "src/colors.scss";
+
+.navbar {
+  &__logo {
+    width: 100px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .menu {
+    &__list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5vw;
+    }
+    &__link {
+      font-size: 14px;
+      font-weight: 300;
+    }
+    &__icon {
+      display: none;
+    }
+  }
+}
+
+#light .navbar {
+  background-color: $dark;
+}
+
+#dark .navbar {
+  background-color: $background-dark;
+}
+
+@media (max-width: 674px) {
+}
