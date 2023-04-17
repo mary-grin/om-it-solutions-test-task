@@ -1,0 +1,77 @@
+@import "src/colors.scss";
+
+.service-card {
+  width: 210px;
+  .card {
+    &__image {
+      border-radius: 100%;
+      width: 85px;
+      height: 85px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    &__title {
+      font-size: 16px;
+      font-weight: 600;
+      width: 120px;
+      margin-bottom: 10px;
+    }
+    &__line {
+      opacity: 1;
+      margin: 0 0 15px;
+    }
+    &__text {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 145%;
+    }
+  }
+}
+
+.yellow {
+  .card {
+    &__image {
+      background-color: $yellow-light;
+    }
+    &__line {
+      border: 3px solid $yellow-light;
+    }
+  }
+}
+.green-full {
+  .card {
+    &__image {
+      background-color: $additional_green;
+    }
+    &__line {
+      border: 3px solid $additional_green;
+    }
+  }
+}
+.green-stroke {
+  .card {
+    &__image {
+      border: 2px solid $additional_green;
+    }
+    &__line {
+      border: 3px solid $additional_green;
+    }
+  }
+}
+.gray {
+  .card {
+    &__image {
+      border: 2px solid $gray;
+    }
+    &__line {
+      border: 3px solid $gray;
+    }
+  }
+}
+
+#dark .card__title,
+#dark .card__text {
+  color: $white;
+}

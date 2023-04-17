@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import { Context } from "@/context/ThemeContext";
 
 import "./App.scss";
+import ServicesBlock from "@/components/ServicesBlock/ServicesBlock";
 
 function App() {
   const { theme } = useContext(Context);
@@ -14,8 +15,9 @@ function App() {
   return (
     <div className="page" id={theme}>
       <Header />
-      <main>
+      <main className="main">
         <Navbar />
+        <ServicesBlock/>
       </main>
     </div>
   );
