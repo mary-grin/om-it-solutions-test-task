@@ -1,23 +1,30 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 
 import "./Navbar.scss";
 
 interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = ({}) => {
+  const [active, setActive] = useState<boolean>(false);
+
   return (
     <div className="navbar">
       <div className="_container">
         <div className="navbar__content">
           <img
-            src="public/img/logo-dark.png"
+            src="/img/logo-dark.png"
             alt="Logo eLearning"
             className="navbar__logo"
           />
-          <nav className="navbar__menu">
-            <div className="menu__icon">
-              <span></span>
-            </div>
+          <div
+            className={`menu__icon${active ? " active" : ""}`}
+            onClick={() => {
+              setActive((state) => !state);
+            }}
+          >
+            <span></span>
+          </div>
+          <nav className={`navbar__menu${active ? " active" : ""}`}>
             <ul className="menu__list">
               <li className="menu__item">
                 <a href="#" className="menu__link">
