@@ -1,0 +1,42 @@
+@import "src/colors.scss";
+
+.occupation-picker {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: fit-content;
+  max-width: 560px;
+  height: 80px;
+  &__header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__arrow {
+    transform: rotate(90deg);
+  }
+  &__dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  &__option {
+    background-color: $gray-light;
+    padding: 3px 18px;
+    border-radius: 14px;
+    width: fit-content;
+    cursor: pointer;
+  }
+  &__close {
+    cursor: pointer;
+    align-self: center;
+  }
+}
+
+#dark {
+  .occupation-picker__text {
+    color: white;
+  }
+}

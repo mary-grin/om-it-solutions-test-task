@@ -5,6 +5,9 @@ export interface ServicesData {
   color: string;
 }
 
+export const colors: string[] = ['all', 'yellow', 'green-full', 'green-stroke', 'gray']
+export const occupations: string[] = ['All', 'Instructional Design', 'Elearning Development', 'Mobile Learning', 'Instructor-led Training']
+
 export const serviceData: ServicesData[] = [
   {
     title: "Instructional Design",

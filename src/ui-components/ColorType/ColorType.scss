@@ -1,0 +1,58 @@
+@import "src/colors.scss";
+
+.color-picker {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: fit-content;
+  max-width: 180px;
+  &__header {
+    border-radius: 100%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__header, &__option{
+    &.all {
+      background-color: $dark-light;
+    }
+    &.yellow {
+      background-color: $yellow-light;
+    }
+    &.green-full {
+      background-color: $additional_green;
+    }
+    &.green-stroke {
+      border: 1px solid $additional_green;
+    }
+    &.gray {
+      border: 1px solid $gray;
+    }
+  }
+  &__dropdown {
+    padding: 6px;
+    border-radius: 14px;
+    background-color: $gray-light;
+    display: flex;
+    gap: 5px;
+  }
+  &__option {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  &__close {
+    cursor: pointer;
+  }
+}
+
+#dark {
+  .color-picker__text {
+    color: white;
+  }
+}
+
