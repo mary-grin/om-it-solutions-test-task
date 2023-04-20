@@ -2,19 +2,19 @@ import { FC, useContext, useState } from "react";
 
 import "./Occupation.scss"
 import { occupations } from "@/data/ServicesData";
-import { Context } from "@/context/ThemeContext";
+import { themeContext } from "@/context/ThemeContext";
 
 interface OccupationProps {
-
+  occupation: string,
+  setOccupation: (occupation: string) => void
 }
 
-const Occupation: FC<OccupationProps> = ({}) => {
+const Occupation: FC<OccupationProps> = ({occupation, setOccupation}) => {
   const [isOpen, setIsOpen] = useState(false);
-  const {theme} = useContext(Context);
-  const [selectedOccupation, setSelectedOccupation] = useState('All');
+  const {theme} = useContext(themeContext);
 
   const handleOccupationSelect = (color: string) => {
-    setSelectedOccupation(color);
+    setOccupation(color);
     setIsOpen(false);
   };
 
@@ -26,7 +26,7 @@ const Occupation: FC<OccupationProps> = ({}) => {
           className={`occupation-picker__header`}
           onClick={() => setIsOpen(true)}
         >
-          <div className="occupation-picker__option">{selectedOccupation}</div>
+          <div className="occupation-picker__option">{occupation}</div>
           <img className="occupation-picker__arrow" src={`icons/arrow-${theme}.svg`}/>
         </div>
       }

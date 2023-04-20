@@ -2,7 +2,7 @@ import { FC, useContext } from "react";
 
 import Slider from "@/components/Slider/Slider";
 import SliderMobile from "@/components/Slider/SliderMobile";
-import { Context } from "@/context/ThemeContext";
+import { themeContext } from "@/context/ThemeContext";
 import ThemeToggle from "@/ui-components/ThemeToggle/ThemeToggle";
 
 import "./Header.scss";
@@ -10,7 +10,7 @@ import "./Header.scss";
 interface HeaderProps {}
 
 const Header: FC<HeaderProps> = ({}) => {
-  const { theme } = useContext(Context);
+  const { theme } = useContext(themeContext);
 
   return (
     <header className="header">

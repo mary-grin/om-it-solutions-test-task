@@ -1,18 +1,14 @@
-import {FC} from "react";
+import { ChangeEvent, FC } from "react";
 
 import "./SearchInput.scss"
 
 interface SearchInputProps {
-
+    setSearch: (e: ChangeEvent<HTMLInputElement>) => void
 }
 
-const SearchInput: FC<SearchInputProps> = ({}) => {
-    const handleOnChange = () => {
-
-    }
-
+const SearchInput: FC<SearchInputProps> = ({setSearch}) => {
     return (
-        <input type="text" className="search" placeholder="Search" onChange={handleOnChange}/>
+        <input type="text" className="search" placeholder="Search" onChange={setSearch}/>
     )
 }
 

@@ -1,13 +1,13 @@
 import { FC, useContext } from "react";
 
-import { Context } from "@/context/ThemeContext";
+import { themeContext } from "@/context/ThemeContext";
 
 import "./ThemeToggle.scss";
 
 interface ThemeToggleProps {}
 
 const ThemeToggle: FC<ThemeToggleProps> = ({}) => {
-  const { theme, changeTheme } = useContext(Context);
+  const { theme, changeTheme } = useContext(themeContext);
 
   return (
     <label className="theme-toggle">

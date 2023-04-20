@@ -1,6 +1,6 @@
 import { createContext, FC, ReactNode, useState } from "react";
 
-export const Context = createContext<{
+export const themeContext = createContext<{
   theme: string;
   changeTheme: () => void;
 }>({
@@ -19,9 +19,9 @@ const ThemeContext: FC<ThemeContextProps> = ({ children }) => {
     setTheme((state) => (state === "light" ? "dark" : "light"));
   };
   return (
-    <Context.Provider value={{ theme, changeTheme }}>
+    <themeContext.Provider value={{ theme, changeTheme }}>
       {children}
-    </Context.Provider>
+    </themeContext.Provider>
   );
 };
 
