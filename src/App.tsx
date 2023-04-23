@@ -10,6 +10,7 @@ import "./App.scss";
 import ServicesBlock from "@/components/ServicesBlock/ServicesBlock";
 import FilterContext from "@/context/FilterContext";
 import DesignLearnBlock from "@/components/DesignLearnBlock/DesignLearnBlock";
+import BenefitsBlock from "@/components/BenefitsBlock/BenefitsBlock";
 
 function App() {
   const { theme } = useContext(themeContext);
@@ -23,6 +24,7 @@ function App() {
           <ServicesBlock/>
         </FilterContext>
         <DesignLearnBlock/>
+        <BenefitsBlock/>
       </main>
     </div>
   );

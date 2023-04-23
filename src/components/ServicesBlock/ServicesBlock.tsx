@@ -17,7 +17,7 @@ const ServicesBlock: FC<ServicesBlockProps> = ({}) => {
       <div className="_container">
         <div className="service">
           <div className="service__content">
-            <h2 className="service__title">Services We Provide</h2>
+            <h2 className="service__title title">Services We Provide</h2>
             <Toolbar/>
             {!services.length && <p>Nothing to show :(</p>}
             <ServiceCards services={services}/>

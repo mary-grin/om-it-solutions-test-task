@@ -1,0 +1,56 @@
+@import "src/colors.scss";
+
+.benefits {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &.second {
+      flex-direction: row-reverse;
+    }
+  }
+  &__info {
+    max-width: 600px;
+  }
+  &__subtitle {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  &__text {
+    margin-bottom: 35px;
+  }
+  .benefit {
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 480px;
+  }
+  &__image {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+#dark {
+  .benefits {
+    &__subtitle, &__text {
+      color: $white;
+    }
+  }
+  .benefit {
+    &__text {
+      color: $white;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .benefits__content {
+
+    &.second, &.first {
+      flex-direction: column;
+    }
+  }
+}
