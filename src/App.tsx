@@ -9,6 +9,7 @@ import { themeContext } from "@/context/ThemeContext";
 import "./App.scss";
 import ServicesBlock from "@/components/ServicesBlock/ServicesBlock";
 import FilterContext from "@/context/FilterContext";
+import DesignLearnBlock from "@/components/DesignLearnBlock/DesignLearnBlock";
 
 function App() {
   const { theme } = useContext(themeContext);
@@ -21,6 +22,7 @@ function App() {
         <FilterContext>
           <ServicesBlock/>
         </FilterContext>
+        <DesignLearnBlock/>
       </main>
     </div>
   );
