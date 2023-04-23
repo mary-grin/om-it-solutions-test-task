@@ -1,0 +1,17 @@
+@import "src/colors.scss";
+
+.form__button {
+  color: $white;
+  background-color: transparent;
+  border: 1px solid $white;
+  border-radius: 25px;
+  width: 240px;
+  height: 55px;
+  font-size: 20px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  &:hover {
+    background-color: $additional-green;
+  }
+}

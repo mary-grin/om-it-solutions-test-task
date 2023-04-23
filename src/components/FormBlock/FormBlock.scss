@@ -1,0 +1,33 @@
+@import "src/colors.scss";
+
+#form-block {
+  background-color: $primary_green;
+  padding: 50px 0;
+  .form-block {
+    &__content {
+      margin: 0 auto;
+      max-width: 705px;
+    }
+    &__title {
+      text-align: center;
+      color: $white;
+      font-size: 50px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    &__text {
+      text-align: center;
+      color: $white;
+      font-size: 20px;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #form-block {
+    .form-block__title {
+      font-size: 34px;
+    }
+  }
+}

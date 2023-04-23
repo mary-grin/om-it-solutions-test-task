@@ -11,6 +11,7 @@ import ServicesBlock from "@/components/ServicesBlock/ServicesBlock";
 import FilterContext from "@/context/FilterContext";
 import DesignLearnBlock from "@/components/DesignLearnBlock/DesignLearnBlock";
 import BenefitsBlock from "@/components/BenefitsBlock/BenefitsBlock";
+import FormBlock from "@/components/FormBlock/FormBlock";
 
 function App() {
   const { theme } = useContext(themeContext);
@@ -25,6 +26,7 @@ function App() {
         </FilterContext>
         <DesignLearnBlock/>
         <BenefitsBlock/>
+        <FormBlock/>
       </main>
     </div>
   );
