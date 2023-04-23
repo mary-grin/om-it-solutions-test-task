@@ -1,5 +1,9 @@
 @import "src/colors.scss";
 
+.main .navbar {
+  position: sticky;
+  top: 0;
+}
 .navbar {
   &__logo {
     width: 100px;

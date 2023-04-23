@@ -1,0 +1,51 @@
+@import "src/colors.scss";
+
+.footer {
+  color: $footer-text;
+  &__container {
+    background: $background-dark;
+    padding: 65px 0;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__copyright {
+    background: $gray-dark;
+    padding: 27px 0;
+    text-align: center;
+    color: $copyright-text;
+    font-size: 14px;
+  }
+  &__logo-text {
+    font-size: 12px;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    &__link {
+      color: $footer-text;
+      cursor: pointer;
+      font-size: 14px;
+      &:hover {
+        color: $gray;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .footer{
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    .list {
+      align-items: center;
+    }
+  }
+
+}
