@@ -3,3 +3,10 @@
   align-items: flex-start;
   gap: 50px;
 }
+
+@media (max-width: 1000px) {
+  .toolbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -8,6 +8,8 @@
   justify-content: flex-end;
   &__content {
     max-width: 1100px;
+    width: 100%;
+    min-height: 675px;
   }
   &__title {
     color: $gray-title;
@@ -16,17 +18,29 @@
     margin-bottom: 35px;
   }
   &__cards {
-    display: flex;
-    gap: 100px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    justify-content: space-between;
     margin-top: 45px;
+    min-height: 305px;
   }
 }
 
-@media (max-width: 674px) {
+@media (max-width: 1000px) {
   .service {
     &__cards {
+      grid-template-columns: repeat(2, 200px);
+      justify-content: center;
       gap: 50px;
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .service {
+    &__cards {
+      grid-template-columns: repeat(1, 200px);
+      justify-content: center;
     }
   }
 }

@@ -75,3 +75,17 @@
 #dark .card__text {
   color: $white;
 }
+
+@media (max-width: 490px) {
+  .service-card {
+    .card {
+      &__image {
+        margin: 0 auto 30px auto;
+      }
+      &__title, &__text {
+        text-align: center;
+        margin: 0 auto 10px auto;
+      }
+    }
+  }
+}

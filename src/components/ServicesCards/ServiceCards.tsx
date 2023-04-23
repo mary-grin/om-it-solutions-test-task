@@ -1,4 +1,4 @@
-import { FC, useContext, useState } from "react";
+import { FC, useContext, useEffect, useState } from "react";
 
 import Paginator from "@/components/Paginator/Paginator";
 import { themeContext } from "@/context/ThemeContext";
@@ -11,6 +11,10 @@ interface ServicesCardsProps {
 
 const ServiceCards: FC<ServicesCardsProps> = ({ services }) => {
   const [page, setPage] = useState<number>(1);
+
+  useEffect(() => {
+    setPage(1)
+  }, [services.length])
 
   const prevPage = () => {
     setPage((page) => page - 1);

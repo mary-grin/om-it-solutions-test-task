@@ -7,6 +7,7 @@
   width: fit-content;
   max-width: 560px;
   height: 80px;
+  max-height: fit-content;
   &__header {
     display: flex;
     gap: 10px;
@@ -38,5 +39,11 @@
 #dark {
   .occupation-picker__text {
     color: white;
+  }
+}
+
+@media (max-width: 1155px) {
+  .occupation-picker {
+    height: fit-content;
   }
 }

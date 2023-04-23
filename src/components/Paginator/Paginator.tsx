@@ -22,7 +22,7 @@ const Paginator: FC<PaginatorProps> = ({page, nextPage, prevPage, setPage, servi
   }
 
   return (
-    <div className="service__paginator">
+    <div className="service__paginator" hidden={pageItems.length <= 1}>
       <button
         className="service__btn"
         disabled={page == 1}
