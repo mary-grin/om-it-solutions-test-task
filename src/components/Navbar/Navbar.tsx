@@ -1,10 +1,9 @@
-import { FC, useState } from "react";
+import { useState } from "react";
 
 import "./Navbar.scss";
+import NavbarLink from "@/components/NavbarLink/NavbarLink";
 
-interface NavbarProps {}
-
-const Navbar: FC<NavbarProps> = ({}) => {
+const Navbar = () => {
   const [active, setActive] = useState<boolean>(false);
 
   return (
@@ -26,41 +25,13 @@ const Navbar: FC<NavbarProps> = ({}) => {
           </div>
           <nav className={`navbar__menu${active ? " active" : ""}`}>
             <ul className="menu__list">
-              <li className="menu__item">
-                <a href="#home" className="menu__link" onClick={() => setActive(false)}>
-                  Home
-                </a>
-              </li>
-              <li className="menu__item">
-                <a href="#services" className="menu__link" onClick={() => setActive(false)}>
-                  Services
-                </a>
-              </li>
-              <li className="menu__item">
-                <a href="#services" className="menu__link" onClick={() => setActive(false)}>
-                  Instructional Design
-                </a>
-              </li>
-              <li className="menu__item">
-                <a href="#design-learn" className="menu__link" onClick={() => setActive(false)}>
-                  eLearning Development
-                </a>
-              </li>
-              <li className="menu__item">
-                <a href="#benefits_first" className="menu__link" onClick={() => setActive(false)}>
-                  eLearning Price Quote
-                </a>
-              </li>
-              <li className="menu__item">
-                <a href="#benefits_second" className="menu__link" onClick={() => setActive(false)}>
-                  eLearning Packages
-                </a>
-              </li>
-              <li className="menu__item">
-                <a href="#form-block" className="menu__link" onClick={() => setActive(false)}>
-                  Contact
-                </a>
-              </li>
+              <NavbarLink title="Home" href="#home" onClick={() => setActive(false)}/>
+              <NavbarLink title="Services" href="#services" onClick={() => setActive(false)}/>
+              <NavbarLink title="Instructional Design" href="#benefits_first" onClick={() => setActive(false)}/>
+              <NavbarLink title="eLearning Development" onClick={() => setActive(false)}/>
+              <NavbarLink title="eLearning Price Quote" onClick={() => setActive(false)}/>
+              <NavbarLink title="eLearning Packages" onClick={() => setActive(false)}/>
+              <NavbarLink title="Contact" href="#form-block" onClick={() => setActive(false)}/>
             </ul>
           </nav>
         </div>

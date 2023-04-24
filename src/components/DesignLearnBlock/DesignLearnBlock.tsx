@@ -1,10 +1,6 @@
-import { FC } from "react";
-
 import "./DesignLearnBlock.scss";
 
-interface DesignLearnBlockProps {}
-
-const DesignLearnBlock: FC<DesignLearnBlockProps> = ({}) => {
+const DesignLearnBlock = () => {
   return (
     <section id="design-learn">
       <div className="design-learn">
