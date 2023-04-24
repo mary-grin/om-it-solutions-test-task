@@ -27,12 +27,14 @@ const Paginator: FC<PaginatorProps> = ({page, nextPage, prevPage, setPage, servi
         className="service__btn"
         disabled={page == 1}
         onClick={prevPage}
+        type="button"
       >
         <img src={`/icons/arrow-prev-${theme}.svg`} alt="Arrow previous page"/>
       </button>
       <div className="service__pages">
         {pageItems.map((item) => (
           <button
+            type="button"
             key={item}
             className={`service__page${page == item ? " active" : ""}`}
             onClick={() => setPage(item)}
@@ -42,6 +44,7 @@ const Paginator: FC<PaginatorProps> = ({page, nextPage, prevPage, setPage, servi
         ))}
       </div>
       <button
+        type="button"
         className="service__btn"
         disabled={page * 4 >= serviceLength}
         onClick={nextPage}

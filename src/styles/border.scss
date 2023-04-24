@@ -3,7 +3,6 @@
 .half-border {
   position: relative;
   border: none;
-  //border-top: 2px solid $primary_green;
   margin-top: -2px;
 }
 .half-border-left {
@@ -38,6 +37,7 @@
   width: 51%;
   border-top: 2px solid $primary_green;
   border-bottom: 2px solid $primary_green;
+  z-index: -1;
 }
 
 .half-border-right::before {

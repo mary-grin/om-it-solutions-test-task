@@ -10,7 +10,7 @@ const DesignLearnBlock = () => {
               <div className="design-learn__info">
                 <h1 className="design-learn__title">We Design Learning.</h1>
                 <p className="design-learn__text">What We Can Do For You?</p>
-                <button className="design-learn__btn">Know more</button>
+                <button type="button" className="design-learn__btn">Know more</button>
               </div>
               <img
                 className="design-learn__image"

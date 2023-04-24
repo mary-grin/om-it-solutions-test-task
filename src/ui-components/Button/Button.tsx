@@ -8,7 +8,7 @@ interface ButtonProps {
 
 const Button: FC<ButtonProps> = ({}) => {
     return (
-        <button className="form__button">Send</button>
+        <button type="button" className="form__button">Send</button>
     )
 }
 

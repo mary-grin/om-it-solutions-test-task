@@ -18,38 +18,38 @@ const Footer: FC<FooterProps> = ({}) => {
           </div>
           <ul className="footer__list list">
             <li className="list__item">
-              <a className="list__link">Home eLearning</a>
+              <a href="#home" className="list__link">Home eLearning</a>
             </li>
             <li className="list__item">
-              <a className="list__link">Price Quote Services</a>
+              <a href="#" className="list__link">Price Quote Services</a>
             </li>
             <li className="list__item">
-              <a className="list__link">Instructional Design</a>
-            </li>
-          </ul>
-          <ul className="footer__list list">
-            <li className="list__item">
-              <a className="list__link">eLearning Development</a>
-            </li>
-            <li className="list__item">
-              <a className="list__link">Mobile Learning</a>
-            </li>
-            <li className="list__item">
-              <a className="list__link">Product Training</a>
+              <a href="#benefits_first" className="list__link">Instructional Design</a>
             </li>
           </ul>
           <ul className="footer__list list">
             <li className="list__item">
-              <a className="list__link">Custom eLearning</a>
+              <a href="#services" className="list__link">eLearning Development</a>
             </li>
             <li className="list__item">
-              <a className="list__link">eLearning for Retail</a>
+              <a href="#services" className="list__link">Mobile Learning</a>
             </li>
             <li className="list__item">
-              <a className="list__link">eLearning Packages</a>
+              <a href="#services" className="list__link">Product Training</a>
+            </li>
+          </ul>
+          <ul className="footer__list list">
+            <li className="list__item">
+              <a href="#" className="list__link">Custom eLearning</a>
             </li>
             <li className="list__item">
-              <a className="list__link">Contact</a>
+              <a href="#" className="list__link">eLearning for Retail</a>
+            </li>
+            <li className="list__item">
+              <a href="#" className="list__link">eLearning Packages</a>
+            </li>
+            <li className="list__item">
+              <a href="#form-block" className="list__link">Contact</a>
             </li>
           </ul>
           </div>
