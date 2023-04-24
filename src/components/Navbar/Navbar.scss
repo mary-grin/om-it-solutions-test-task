@@ -3,6 +3,7 @@
 .main .navbar {
   position: sticky;
   top: 0;
+  z-index: 5;
 }
 .navbar {
   &__logo {
@@ -25,6 +26,9 @@
     &__link {
       font-size: 14px;
       font-weight: 300;
+      &:hover {
+        color: $gray;
+      }
     }
     &__icon {
       display: none;

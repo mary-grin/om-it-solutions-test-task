@@ -13,7 +13,7 @@ const Header: FC<HeaderProps> = ({}) => {
   const { theme } = useContext(themeContext);
 
   return (
-    <header className="header">
+    <header className="header" id="home">
       <div className="header__container">
         <div className="_container">
           <div className="header__content">

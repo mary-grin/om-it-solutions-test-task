@@ -27,37 +27,37 @@ const Navbar: FC<NavbarProps> = ({}) => {
           <nav className={`navbar__menu${active ? " active" : ""}`}>
             <ul className="menu__list">
               <li className="menu__item">
-                <a href="#" className="menu__link">
+                <a href="#home" className="menu__link" onClick={() => setActive(false)}>
                   Home
                 </a>
               </li>
               <li className="menu__item">
-                <a href="#" className="menu__link">
+                <a href="#services" className="menu__link" onClick={() => setActive(false)}>
                   Services
                 </a>
               </li>
               <li className="menu__item">
-                <a href="#" className="menu__link">
+                <a href="#services" className="menu__link" onClick={() => setActive(false)}>
                   Instructional Design
                 </a>
               </li>
               <li className="menu__item">
-                <a href="#" className="menu__link">
+                <a href="#design-learn" className="menu__link" onClick={() => setActive(false)}>
                   eLearning Development
                 </a>
               </li>
               <li className="menu__item">
-                <a href="#" className="menu__link">
+                <a href="#benefits_first" className="menu__link" onClick={() => setActive(false)}>
                   eLearning Price Quote
                 </a>
               </li>
               <li className="menu__item">
-                <a href="#" className="menu__link">
+                <a href="#benefits_second" className="menu__link" onClick={() => setActive(false)}>
                   eLearning Packages
                 </a>
               </li>
               <li className="menu__item">
-                <a href="#" className="menu__link">
+                <a href="#form-block" className="menu__link" onClick={() => setActive(false)}>
                   Contact
                 </a>
               </li>

@@ -1,0 +1,86 @@
+@import "src/colors.scss";
+
+.half-border {
+  position: relative;
+  border: none;
+  //border-top: 2px solid $primary_green;
+  margin-top: -2px;
+}
+.half-border-left {
+  padding-left: 10px;
+}
+.half-border-right {
+  padding-right: 10px;
+}
+.half-border-start {
+  border-top: none;
+}
+.half-border.half-border-start::before {
+  border-top: none;
+}
+.half-border.half-border-end::before {
+  border-bottom: none;
+}
+.half-border.half-border-start::after {
+  top: 0;
+}
+.half-border.half-border-end::after {
+  width: 0;
+  height: 0;
+}
+
+.half-border::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  height: 100%;
+  width: 51%;
+  border-top: 2px solid $primary_green;
+  border-bottom: 2px solid $primary_green;
+}
+
+.half-border-right::before {
+  right: -2px;
+  border-right: 2px solid $primary_green;
+  border-radius: 0 10px 10px 0;
+}
+
+.half-border-left::before {
+  left: -2px;
+  border-left: 2px solid $primary_green;
+  border-radius: 10px 0 0 10px;
+}
+
+.half-border::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $primary_green;
+  z-index: 1;
+}
+
+.half-border-right::after {
+  right: -14px;
+}
+
+.half-border-left::after {
+  left: -14px;
+}
+
+@media (max-width: 840px) {
+  .half-border {
+    border: none;
+  }
+  .half-border::before {
+    border: none;
+  }
+  .half-border::after {
+    width: 0;
+    height: 0;
+  }
+}
