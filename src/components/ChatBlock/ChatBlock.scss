@@ -1,0 +1,39 @@
+@import "src/colors.scss";
+
+#chat {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  z-index: 4;
+}
+.chat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 25px;
+  &__icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    background-color: $additional_green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &.active {
+      animation: 2s infinite chat-active-animation;
+    }
+  }
+}
+
+@keyframes chat-active-animation {
+  0% {
+    box-shadow: 0 0 0 1px $green-light-20;
+  }
+  50% {
+    box-shadow: 0 0 0 10px $green-light-20;
+  }
+  100% {
+    box-shadow: 0 0 0 1px $green-light-20;
+  }
+}

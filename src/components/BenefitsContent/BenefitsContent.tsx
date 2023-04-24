@@ -15,8 +15,8 @@ const BenefitsContent: FC<BenefitsContentProps> = ({number, data}) => {
             <div className="benefits__info">
                 <h4 className="benefits__subtitle">{data.title}</h4>
                 <p className="benefits__text">{data.description}</p>
-                {data.benefits.map(benefit => (
-                  <div className="benefits__item benefit">
+                {data.benefits.map((benefit, i) => (
+                  <div className="benefits__item benefit" key={i}>
                       <img className="benefit__icon" src="public/icons/line-md-confirm.svg"/>
                       <p className="benefit__text">{benefit}</p>
                   </div>
