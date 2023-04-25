@@ -51,14 +51,14 @@ const Chat: FC<ChatProps> = ({ isOpen }) => {
         <div className={`chat__window ${theme} active`}>
           <div className="chat__header">
             <div className="chat__info">
-              <img src="/chat-icons/chat-person.svg" alt="Chat Person Icon" />
+              <img src="/img/chat-person.svg" alt="Chat Person Icon" />
               <div className="chat__title">
                 <p className="chat__operator">eLearning company</p>
                 <p className="chat__status">Operator is online</p>
               </div>
             </div>
             <img
-              src="/chat-icons/chat-details.svg"
+              src="/img/chat-details.svg"
               alt="Char Details Icon"
               className="chat__details"
             />
