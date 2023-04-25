@@ -12,7 +12,7 @@ const SliderMobile = () => {
       <CarouselItem>
         <div className="carousel__slide">
           <img
-            src="/img/1.1_slide.png"
+            src="img/1.1_slide.png"
             alt="Services"
             className="carousel__image"
           />
@@ -22,7 +22,7 @@ const SliderMobile = () => {
       <CarouselItem>
         <div className="carousel__slide">
           <img
-            src="/img/1.2_slide.png"
+            src="img/1.2_slide.png"
             alt="Instructional Design"
             className="carousel__image"
           />
@@ -32,7 +32,7 @@ const SliderMobile = () => {
       <CarouselItem>
         <div className="carousel__slide">
           <img
-            src="/img/2.1_slide.png"
+            src="img/2.1_slide.png"
             alt="eLearning Development"
             className="carousel__image"
           />
@@ -42,7 +42,7 @@ const SliderMobile = () => {
       <CarouselItem>
         <div className="carousel__slide">
           <img
-            src="/img/2.2_slide.png"
+            src="img/2.2_slide.png"
             alt="eLearning Price Quote"
             className="carousel__image"
           />
@@ -52,7 +52,7 @@ const SliderMobile = () => {
       <CarouselItem>
         <div className="carousel__slide">
           <img
-            src="/img/3.1_slide.png"
+            src="img/3.1_slide.png"
             alt="eLearning Packages"
             className="carousel__image"
           />
@@ -62,13 +62,13 @@ const SliderMobile = () => {
       <CarouselItem>
         <div className="carousel__slide">
           <img
-            src="/img/3.2_slide.png"
+            src="img/3.2_slide.png"
             alt="Contact us"
             className="carousel__image"
           ></img>
           <div className="carousel__block">
             <img
-              src="/img/contact-us.svg"
+              src="img/contact-us.svg"
               alt="Letter Icon"
               className="carousel__icon"
             />

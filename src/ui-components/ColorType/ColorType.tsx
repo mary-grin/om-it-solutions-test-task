@@ -26,7 +26,7 @@ const ColorType: FC<ColorTypeProps> = ({type, setType}) => {
               className={`color-picker__header ${type.toLowerCase()}`}
               onClick={() => setIsOpen(true)}
             >
-              <img className="color-picker__arrow" src={`icons/arrow-${theme}.svg`}/>
+              <img className="color-picker__arrow" src={`img/arrow-${theme}.svg`}/>
             </div>
           }
           {isOpen && (
@@ -41,7 +41,7 @@ const ColorType: FC<ColorTypeProps> = ({type, setType}) => {
                 ))}
               </div>
               <div className="color-picker__close" onClick={() => setIsOpen(false)}>
-                <img src={`icons/close-${theme}.svg`}/>
+                <img src={`img/close-${theme}.svg`}/>
               </div>
             </>
           )}

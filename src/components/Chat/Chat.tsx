@@ -51,14 +51,14 @@ const Chat: FC<ChatProps> = ({ isOpen }) => {
         <div className={`chat__window ${theme} active`}>
           <div className="chat__header">
             <div className="chat__info">
-              <img src="/img/chat-person.svg" alt="Chat Person Icon" />
+              <img src="img/chat-person.svg" alt="Chat Person Icon" />
               <div className="chat__title">
                 <p className="chat__operator">eLearning company</p>
                 <p className="chat__status">Operator is online</p>
               </div>
             </div>
             <img
-              src="/img/chat-details.svg"
+              src="img/chat-details.svg"
               alt="Char Details Icon"
               className="chat__details"
             />
@@ -81,7 +81,7 @@ const Chat: FC<ChatProps> = ({ isOpen }) => {
                 onKeyDown={(e) => e.key === 'Enter' ? sendMessage() : null}
               />
               <img
-                src={`/chat-icons/chat-attach-${theme}.svg`}
+                src={`img/chat-attach-${theme}.svg`}
                 alt="Chat Attach Icon"
                 className="chat__attach"
               />
@@ -91,7 +91,7 @@ const Chat: FC<ChatProps> = ({ isOpen }) => {
                 className="chat__submit"
               >
                 <img
-                  src={`/chat-icons/chat-send-${theme}.svg`}
+                  src={`img/chat-send-${theme}.svg`}
                   alt="Chat Send Icon"
                   className="chat__send"
                 />

@@ -45,7 +45,7 @@
   .header {
     &__container {
       background-image: linear-gradient($black_light, $black_light),
-        url("/img/header_background.png");
+        url("img/header_background.png");
     }
   }
 
@@ -61,7 +61,7 @@
   .header {
     &__container {
       background-image: linear-gradient($black_dark, $black_dark),
-        url("/img/header_background.png");
+        url("img/header_background.png");
     }
   }
 

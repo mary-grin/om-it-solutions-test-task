@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="_container">
         <div className="navbar__content">
           <img
-            src="/img/logo-dark.png"
+            src="img/logo-dark.png"
             alt="Logo eLearning"
             className="navbar__logo"
           />

@@ -20,7 +20,7 @@
     }
     &:checked + .theme-toggle__slider::before {
       transform: translateX(-90px);
-      content: url("/icons/nightmode.svg");
+      content: url("img/nightmode.svg");
       border: 0.6px solid $black;
     }
   }
@@ -39,7 +39,7 @@
 
     &::before {
       position: absolute;
-      content: url("/icons/daymode.svg");
+      content: url("img/daymode.svg");
       display: flex;
       justify-content: center;
       align-items: flex-end;

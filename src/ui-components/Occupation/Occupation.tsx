@@ -27,7 +27,7 @@ const Occupation: FC<OccupationProps> = ({occupation, setOccupation}) => {
           onClick={() => setIsOpen(true)}
         >
           <div className="occupation-picker__option">{occupation}</div>
-          <img className="occupation-picker__arrow" src={`icons/arrow-${theme}.svg`}/>
+          <img className="occupation-picker__arrow" src={`img/arrow-${theme}.svg`}/>
         </div>
       }
       {isOpen && (
@@ -41,7 +41,7 @@ const Occupation: FC<OccupationProps> = ({occupation, setOccupation}) => {
               >{occupation}</div>
             ))}
             <div className="occupation-picker__close" onClick={() => setIsOpen(false)}>
-              <img src={`icons/close-${theme}.svg`}/>
+              <img src={`img/close-${theme}.svg`}/>
             </div>
           </div>
         </>

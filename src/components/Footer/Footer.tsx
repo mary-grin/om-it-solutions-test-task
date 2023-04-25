@@ -11,7 +11,7 @@ const Footer: FC<FooterProps> = ({}) => {
         <div className="_container">
           <div className="footer__content">
           <div className="footer__logo">
-            <img src="/img/logo-footer.png" />
+            <img src="img/logo-footer.png" />
             <p className="footer__logo-text">
               Taking learning to the next level
             </p>

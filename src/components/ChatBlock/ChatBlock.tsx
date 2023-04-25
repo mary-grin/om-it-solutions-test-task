@@ -14,7 +14,7 @@ const ChatBlock = () => {
           className={`chat__icon${isOpen ? " inactive" : " active"}`}
           onClick={() => setIsOpen((state) => !state)}
         >
-          <img src="/img/chat-icon.svg" />
+          <img src="img/chat-icon.svg" />
         </div>
       </div>
   );

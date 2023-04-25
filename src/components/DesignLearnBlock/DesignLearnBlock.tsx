@@ -14,7 +14,7 @@ const DesignLearnBlock = () => {
               </div>
               <img
                 className="design-learn__image"
-                src="/img/know-more_man.png"
+                src="img/know-more_man.png"
               />
             </div>
             <div className="design-learn__line"></div>
