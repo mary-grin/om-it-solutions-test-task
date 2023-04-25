@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/om-it-solutions/',
+  base: '/om-it-solutions-test-task/',
   plugins: [react()],
   resolve: {
     alias: [
